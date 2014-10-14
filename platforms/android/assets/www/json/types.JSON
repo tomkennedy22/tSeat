@@ -1,0 +1,27 @@
+{
+	"types":[
+		{
+			"type_id": "1",
+			"type":"Desk",
+			"img": "img/SeatPictures/desk.jpg"
+		},
+
+		{
+			"type_id": "2",
+			"type":"Cafe",
+			"img": "img/SeatPictures/cafe table.JPG"
+		},
+
+		{
+			"type_id": "3",
+			"type":"Dogbone",
+			"img": "img/SeatPictures/dogbone.jpg"
+		},
+
+		{
+			"type_id": "4",
+			"type":"High Desk",
+			"img": "img/SeatPictures/high desk.jpg"
+		}
+	]				
+}

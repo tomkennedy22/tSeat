@@ -1,0 +1,148 @@
+{
+  "ratings": [
+    {
+      "seat_id": "A1",
+      "rating_id": "1",
+      "user_id": "1",
+      "rating": "1"
+    },
+    {
+      "seat_id": "B23",
+      "rating_id": "2",
+      "user_id": "1",
+      "rating": "4"
+    },
+    {
+      "seat_id": "A3",
+      "rating_id": "3",
+      "user_id": "2",
+      "rating": "4"
+    },
+    {
+      "seat_id": "A4",
+      "rating_id": "4",
+      "user_id": "2",
+      "rating": "5"
+    },
+    {
+      "seat_id": "A1",
+      "rating_id": "5",
+      "user_id": "6",
+      "rating": "5"
+    },
+    {
+      "seat_id": "A2",
+      "rating_id": "6",
+      "user_id": "3",
+      "rating": "5"
+    },
+    {
+      "seat_id": "A4",
+      "rating_id": "7",
+      "user_id": "3",
+      "rating": "5"
+    },
+    {
+      "seat_id": "B24",
+      "rating_id": "8",
+      "user_id": "3",
+      "rating": "5"
+    },
+    {
+      "seat_id": "B25",
+      "rating_id": "9",
+      "user_id": "3",
+      "rating": "3"
+    },
+    {
+      "seat_id": "B26",
+      "rating_id": "10",
+      "user_id": "3",
+      "rating": "4"
+    },
+    {
+      "seat_id": "B27",
+      "rating_id": "11",
+      "user_id": "3",
+      "rating": "2"
+    },
+    {
+      "seat_id": "B41",
+      "rating_id": "12",
+      "user_id": "3",
+      "rating": "1"
+    },
+    {
+      "seat_id": "B7",
+      "rating_id": "13",
+      "user_id": "3",
+      "rating": "5"
+    },
+    {
+      "seat_id": "C59",
+      "rating_id": "14",
+      "user_id": "3",
+      "rating": "4"
+    },
+    {
+      "seat_id": "C60",
+      "rating_id": "15",
+      "user_id": "3",
+      "rating": "3"
+    },
+    {
+      "seat_id": "C61",
+      "rating_id": "16",
+      "user_id": "3",
+      "rating": "4"
+    },
+    {
+      "seat_id": "C62",
+      "rating_id": "17",
+      "user_id": "3",
+      "rating": "3"
+    },
+    {
+      "seat_id": "D12",
+      "rating_id": "18",
+      "user_id": "3",
+      "rating": "4"
+    },
+    {
+      "seat_id": "D28",
+      "rating_id": "19",
+      "user_id": "3",
+      "rating": "5"
+    },
+    {
+      "seat_id": "D29",
+      "rating_id": "20",
+      "user_id": "3",
+      "rating": "2"
+    },
+    {
+      "seat_id": "D3",
+      "rating_id": "21",
+      "user_id": "3",
+      "rating": "1"
+    },
+    {
+      "seat_id": "D7",
+      "rating_id": "22",
+      "user_id": "3",
+      "rating": "5"
+    },
+    {
+      "seat_id": "A3",
+      "rating_id": "23",
+      "user_id": "3",
+      "rating": "3"
+    },
+    {
+      "seat_id": "A1",
+      "rating_id": "24",
+      "user_id": "3",
+      "rating": "5"
+    }
+    ]
+}

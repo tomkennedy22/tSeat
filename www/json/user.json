@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "username": "Tom@att.com",
+      "password": "xxx5",
+      "user_id": "1"
+    },
+    {
+      "username": "sz549k@att.com",
+      "password": "12345",
+      "user_id": "2"
+    },
+    {
+      "username": "Shane@att.com",
+      "password": "pass5",
+      "user_id": "3"
+    }
+  ]
+}

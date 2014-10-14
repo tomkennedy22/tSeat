@@ -1,0 +1,1142 @@
+/* Generic styling for html, body, header, and button elements */
+html {
+   width: 95%;
+   height: 100%;
+   background-color: #eee;
+   overflow-x: hidden;
+}
+
+body {
+   min-width: 95%;
+   margin: 0;
+   background: transparent;
+   color: #067ab4;
+   padding: 10px;
+   width: 95%;
+   overflow-x: hidden;
+}
+
+.ui-header:not(.ui-bar-a) {
+   text-align: center;
+   border-width: 0;
+   padding: 5px 0px 0px 0px;
+   box-shadow: 0px 0px 19px 0px #888;
+   position: fixed;
+   width: 100%;
+   height: 65px;
+   z-index: 2;
+   background-color: #eee;
+}
+
+/* End generic styling for html, body, header, and button elements */
+
+/* Added general styling using JQM */
+
+.ui-content {
+   padding: 0px 15px;
+   margin-top: 65px;
+}
+
+.ui-mobile h1,h2,h3,h4,h5,h6 {
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.1;
+}
+
+.ui-mobile h1 {
+   font-size: 34px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+.ui-mobile h2 {
+   font-size: 30px;
+}
+
+.ui-mobile .ui-page-active,.ui-mobile .ui-page, .ui-mobile [data-role=page] {
+   overflow-x: hidden !important;
+   padding-top: 0px !important;
+}
+
+.ui-icon-transparent::after {
+   background-color: transparent;
+}
+
+.ui-mobile label {
+   font-weight: 700;
+}
+
+.ui-footer {
+   position: absolute;
+   bottom: 0;
+}
+
+.ui-content button {
+   background: #3aa5dc;
+   border: none;
+   width: 100%;
+   color: #FFF;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   border-radius: 5px;
+}
+
+.ui-input-text input {
+   font-family: inherit;
+}
+
+/* End general styling using JQM */
+
+/* Styling for header */
+
+#header_body {
+   color: #FF862F;
+   white-space: nowrap;
+   font-size: 200%;
+   text-align: left;
+   font-size: 56px;
+}
+
+#header_body img {
+   height: 65px;
+   margin-left: -5px;
+}
+
+#header_body #nav_button {
+   background: none;
+   border: none;
+   font-size: 19px;
+   color: inherit;
+   padding: 0px 10px;
+   float: right;
+}
+
+i.icon-minus-2 {
+   display: block;
+   margin-top: -10px;
+}
+
+.content {
+	margin-top: 2em;
+}
+
+.ui-panel {
+   overflow-x: hidden;
+}
+
+div#nav_panel {
+   background-color: transparent;
+   margin-top: 14px;
+}
+
+div#nav_panel {
+   box-shadow: none;
+}
+
+div#nav_panel div.ui-panel-inner {
+   background-color: #067ab4;
+   height: 287px;
+   margin-left: 5px;
+   border-radius: 10px 0px 0px 10px;
+   padding-left: 36px;
+   box-shadow: -5px 6px 5px rgba(0, 0, 0, 0.25);
+}
+
+div#nav_panel div.nav_page {
+   color: white;
+   font-size: 20px;
+   margin: 25px 0px;
+   text-align: left;
+   position: relative;
+}
+
+div#nav_panel div.nav_page.on_page, div#nav_panel div.nav_page.on_page span:not(.notify) {
+   font-size: 30px;
+   margin-left: -12px;
+}
+
+.nav_page span {
+   position: absolute;
+   right: 0px;
+}
+
+span.notify {
+   font-size: 14px;
+   position: absolute;
+   top: -8px;
+   right: -10px;
+   text-align: center;
+   background-color: #c4d82d;
+   color: white;
+   font-weight: 700;
+   border-radius: 100px;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   opacity: .9;
+}
+
+/* End styling for header */
+
+/* Styling for footer */
+
+div[data-role="footer"] {
+   height: 33px;
+   width: 100%;
+   position: fixed;
+   bottom: 0px;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 8px !important;
+   z-index: 0;
+   background-image: url(../img/footer.png);
+   background-size: cover;
+}
+
+span.symbol {
+   width: 20%;
+   font-size: 20px;
+   margin-top: 2px;
+   vertical-align: middle;
+   color: #0c2577;
+}
+
+span.symbol.page_on {
+   font-size: 30px;
+   color: white;
+   margin-top: 0px;
+}
+
+/* End styling for footer */
+
+/* Styling for FooTable */
+
+.footable {
+   border-radius: 5px;
+   color: #067ab4;
+   border: 3px solid #067ab4;
+}
+
+.footable thead {
+   background: #FF862F;
+}
+
+html .footable>thead>tr>th,.footable>thead>tr>td {
+   background-color: #067ab4;
+   border: 1px solid #067ab4;
+}
+
+.footable.breakpoint>tbody>tr>td>span.footable-toggle {
+   color: #067ab4;
+}
+
+.footable > tbody > tr:hover:not(.footable-row-detail) > td > span.footable-toggle,
+.footable > tbody > tr:hover:not(.footable-row-detail) > td {
+   color: #045882;
+}
+
+div.footable-row-detail-inner {
+   width: 100%;
+}
+
+span.mini_title {
+   font-weight: 500;
+   font-size: 20px;
+   text-align: center;
+   display: block;
+}
+
+th.footable-visible {
+   font-size: 20px;
+   font-weight: 500px;
+}
+
+td.footable-visible {
+   font-size: 17px;
+   font-weight: 500px;
+}
+
+.table_row {
+   background-color: #e5e5e5;
+}
+
+div.footable-row-detail-name {
+   display: none;
+}
+
+#resTable .relative {
+   position: relative;
+   vertical-align: sub;
+}
+
+div#content {
+   opacity: 1;
+   margin-top: -10px;
+}
+
+span.small_message {
+   font-size: 12px;
+   color: #888;
+   display: block;
+}
+
+/* End styling for FooTable */
+
+/* Styling for row icon, make reservation, and cancel buttons */
+
+button.row_icon {
+   position: relative;
+   float: right;
+   right: 0px;
+   margin: -5px;
+   background: #c4d82d;
+   border: none;
+   color: #FFF;
+   padding: 0px;
+   width: 42px;
+   height: 42px;
+   font-size: 14px;
+   border-radius: 100px;
+   text-align: center;
+}
+
+a.row_icon_holder {
+   width: 20px;
+   position: relative;
+   float: right;
+   right: 0px;
+   margin: -10px;
+   padding: 10px;
+   width: 48px;
+}
+
+button.row_icon.top_margin_big {
+   margin-top: -26px;
+}
+
+button.cancel {
+   background: #b30a3c;
+   border-color: transparent;
+   border-radius: 0px;
+   height: 100%;
+   bottom: 5px;
+   right: 5px;
+   font-weight: 500;
+   font-size: 18px;
+   display: none;
+   position: absolute;
+}
+
+button.row_icon.reserved_icon {
+   background: transparent;
+   border-color: transparent;
+   color: white;
+   opacity: 1;
+}
+
+/* End styling for row icon, make reservation, and cancel buttons */
+
+/* Styling for map */
+
+#map_container.panzoom-parent {
+   border: none;
+   position: relative;
+   margin: auto;
+   margin-top: -22px;
+   width: 100%;
+   height: 305px;
+   border-color: #067ab4;
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 4px;
+}
+
+#map_buttons {
+   position: relative;
+   margin: 10px 0 0;
+}
+
+#map_container img,#inverted-contain .panzoom {
+   width: 100%;
+   height: auto;
+}
+
+div#reserve_seat {
+   margin-top: -30px;
+   margin-bottom: 25px;
+   text-align: center;
+}
+
+#reserve_seat .ui-input-text, #reserve_seat button, #reserve_seat label {
+   display: inline-block;
+   height: 40px;
+   vertical-align: middle;
+   padding: 0px;
+}
+
+#reserve_seat label {
+   width: auto;
+   margin: 0px;
+   font-size: 20px;
+   height: auto;
+}
+
+#reserve_seat .ui-input-text {
+   width: 49px;
+}
+
+#reserve_seat input {
+   padding-top: 10px;
+}
+
+button#reserve_from_map {
+   width: 60%;
+}
+
+/* End styling for map */
+
+/* Styling for aboutPage */
+
+.about {
+   height: 100%;
+   margin: -15px auto;
+   background-color: none;
+   position: relative;
+}
+
+#about_table {
+   opacity: 0;
+}
+
+img.about_img {
+   width: 120px;
+   border-radius: 5px;
+   margin: 5px 10px 0px 0px;
+}
+
+img.about_img_egg {
+  display: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  margin: 5px 10px 0px 0px;
+}
+
+button.about_button_egg {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: none;
+  border: none;
+  color: none;
+  padding-top: none;
+  padding-bottom: none;
+  margin: 5px 10px 0 px 0px;
+  z-index: 10;
+}
+
+p.about_text {
+   line-height: 120%;
+   font-size: 15px;
+   margin: 5px 0px;
+}
+
+.about-text-box span {
+   margin-left: 20px;
+}
+
+#aboutPage .about img {
+   width: 100%;
+   border-radius: 5px;
+}
+
+div.about-text-box {
+   width: 59%;
+   position: absolute;
+   top: -10px;
+   left: 10px;
+   font-size: 13.45px;
+}
+
+div.about-text-box p, h3 {
+   text-align: left;
+   color: #fff;
+}
+
+/* End styling for aboutPage */
+
+/* Styling for makeReservation */
+
+/* Styling for search */
+
+#search {
+   border: none;
+   position: relative;
+   width: 100%;
+}
+
+span.ui-icon.ui-icon-search {
+   right: 10px;
+}
+
+/* Styling for alter search */
+a#alter_search {
+   text-decoration: none;
+   cursor: pointer;
+   text-shadow: none;
+}
+
+a#alter_search span[class*="ui-icon-carat"] {
+   background-color: #067ab4;
+   border-radius: 100px;
+   color: white;
+   position: absolute;
+   top: 1px;
+   right: 0px;
+   padding: 0px;
+   font-size: 20px;
+}
+
+a#alter_search span.icon-pencil {
+   background-color: transparent;
+   padding: 8px;
+   font-size: 18px;
+   position: absolute;
+   top: -2px;
+}
+
+a#alter_search span[class*="icon-cancel"]  {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+}
+
+/* End styling for alter search */
+
+/* Styling for .search_info */
+
+#search div.search_info.upper {
+   margin-top: -15px;
+}
+
+.search_info {
+   display: block;
+   padding: 5px;
+   position: relative;
+}
+
+#search form#search_form {
+   width: 100%;
+   margin-bottom: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -25px;
+}
+
+#show_more span.ui-icon::after,#show_less span.ui-icon::after {
+   position: absolute;
+   background-color: #067ab4;
+   padding: 2px;
+}
+
+[id*="show_"] .ui-btn-icon-notext:after,
+[id*="show_"] .ui-btn-icon-top:after,
+[id*="show_"] .ui-btn-icon-bottom:after
+{
+   left: auto;
+   margin-left: auto;
+}
+
+#regular_options div .ui-input-text,.ui-input-text,.ui-input-search {
+   background: #fff;
+   border-color: #eee;
+   text-shadow: 0 1px 0 #f3f3f3;
+}
+
+/* End styling for .search_info */
+
+.center {
+   text-align: center;
+}
+
+/* Styling for date/time */
+
+#search #search_date input {
+   width: 227px;
+}
+
+#search #search_start_time,#search #search_end_time {
+   display: inline-block;
+}
+
+#search #search_start_time input,#search #search_end_time input {
+   width: 90px;
+}
+
+html .ui-input-datebox {
+   width: 100%;
+}
+
+.ui-datebox-container .ui-title {
+   font-weight: 700;
+   font-size: 25px;
+   width: 100%;
+   text-align: center;
+   margin: 0px;
+   color: #067ab4;
+}
+
+html div.ui-datebox-flipcenter.ui-overlay-shadow {
+   top: -56.5px !important;
+   height: 55px;
+}
+
+html .ui-datebox-flipcontent li {
+   height: 45px;
+   border-color: #ccc;
+}
+
+html .ui-body-a {
+   color: #067ab4;
+}
+
+html .ui-body-b {
+   background-color: #067ab4;
+   text-shadow: none;
+}
+
+html head + body .ui-btn.ui-btn-a {
+   text-shadow: none;
+}
+
+html head + body .ui-btn.ui-btn-b {
+   background-color: #ff7200;
+   border-color: #ff7200;
+   text-shadow: none;
+}
+
+html head + body .ui-btn.ui-btn-a:hover {
+   background-color: #067ab4;
+   color: #ccc;
+   text-shadow: none;
+}
+
+html head + body .ui-btn.ui-btn-b:hover {
+   background-color: #fcb314;
+   border-color: #fcb314;
+   text-shadow: none;
+}
+
+div.ui-header {
+   background: none;
+   border: none;
+}
+
+html div.ui-datebox-header {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+html .ui-datebox-flipcontent {
+   margin-bottom: -40px;
+   margin-top: 10px;
+}
+
+div.ui-datebox-container {
+   background: white;
+   position: fixed !important;
+   border-color: transparent !important;
+}
+
+div.ui-datebox-griddate {
+   padding: 10px 0px 0px 0px;
+   display: inline-block;
+   color: #067ab4;
+}
+
+div.ui-input-datebox {
+   position: relative;
+}
+
+div.ui-input-datebox .ui-btn-icon-notext:after {
+   background-color: #067ab4;
+}
+
+div.ui-datebox-container a.ui-btn {
+   background: #3AA5DC;
+   border-color: #3AA5DC;
+   color: #FFF;
+   width: 176px;
+   font-size: 20px;
+   font-weight: 700;
+   font-family: inherit;
+   padding-left: 32px;
+}
+
+html head + body .ui-btn.ui-btn-a {
+   background-color: #3AA5DC;
+   color: white;
+}
+
+div.ui-datebox-container.date div.ui-datebox-griddate-disable, 
+html head + body .ui-btn.ui-btn-a.ui-datebox-griddate-disable:hover {
+   background-color: #ccc;
+   color: white;
+   text-shadow: none;
+}
+
+.ui-datebox-gridheader h4 {
+   font-weight: 700;
+}
+
+.date_time_symbol {
+   background: #067ab4;
+   color: white;
+   text-align: center;
+   padding: 4px 4px 6px 6px;
+   border-radius: 100px;
+}
+
+div.ui-datebox-container a.ui-icon-delete {
+   display: none;
+}
+
+div#date span, div#time span {
+   position: absolute;
+   top: 18px;
+   right: 10px;
+}
+
+div#time span:nth-of-type(2) {
+   top: 62px;
+}
+
+/* End styling for date/time */
+
+/* Styling for more options */
+
+a#show_more, a#show_less {
+   text-decoration: none;
+   font-size: 20px;
+   display: block;
+   padding-left: 10px;
+   text-shadow: none;
+}
+
+#more_options {
+   text-align: center;
+   display: none;
+}
+
+#more_options i.search_option {
+   color: #bcc9d6;
+   font-size: 39px;
+   margin: 10px 12px;
+   border: 1px solid #bcc9d6;
+   border-radius: 5px;
+   padding: 7px;
+}
+
+#more_options i.selected {
+   color: #067ab4;
+   border-color: #067ab4;
+}
+
+/* Styling for types checkboxes */
+
+section#types {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   margin-top: -15px;
+}
+
+#more_options input[type=radio],input[type=checkbox] {
+   display: none;
+}
+
+#more_options label {
+   width: 24%;
+   font-family: inherit;
+   float: left;
+   margin: -6px 10px;
+   border: none;
+   text-shadow: none;
+   font-size: 17px;
+}
+
+.clear {
+   clear: both;
+}
+
+/* End styling for types checkboxes */
+
+/* Styling for seat number */
+
+#seat_number_options span, #seat_number_options div {
+   display: inline-block;
+   vertical-align: middle;
+   font-family: inherit;
+}
+
+div#select_seat_number-button {
+   padding: 8px 46px 8px 8px;
+   text-align: left;
+   width: 84px;
+}
+
+input#search_seat_number {
+   text-align: left;
+}
+
+#seat_number_options div.ui-input-text {
+   width: 76px;
+}
+
+.ui-btn-icon-right:after {
+   background-color: #067ab4;
+}
+
+/* End styling for seat number */
+
+/* End styling for more options */
+
+/* End styling for search */
+
+/* Styling for pop up */
+
+#pop_up {
+   padding: 10px;
+   border-color: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 6px 6px 10px #333;
+   position: fixed;
+   width: 270px;
+   height: 194px;
+   top: 50%;
+   right: 50%;
+   margin-top: -127px;
+   margin-right: -146px;
+   display: none;
+   background-color: #fff;
+   font-size: 17px;
+   z-index: 4;
+}
+
+#picture {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-left: -142.5px;
+   margin-top: -127px;
+   width: 285px;
+   display: none;
+   border-radius: 5px;
+   box-shadow: 6px 6px 10px #333;
+   z-index: 4;
+}
+
+#pop_up h2 {
+   text-align: center;
+   margin: 12px auto;
+   font-weight: 700;
+}
+
+#pop_up .search_info {
+   padding: 3px 24px;
+}
+
+#pop_up span.date_time_symbol {
+   margin: 0px 12px;
+}
+
+div.pop_up_haze {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.6;
+   display: none; 
+   z-index: 3;
+}
+
+#pop_up span.confirm_info {
+   display: inline-block;
+   text-align: left;
+}
+
+#pop_up .center {
+   position: relative;
+   border-width: 1px solid #ccc;
+   border-radius: 7px;
+   margin-top: 10px;
+   width: 270px;
+   height: 54px;
+   -webkit-box-shadow: inset 0 0 34px #ccc;
+   box-shadow: inset 0 0 34px #ccc;
+   overflow: hidden;
+}
+
+#pop_up .center span.confirm_arrow {
+   top: 13px;
+   left: 7px;
+}
+
+#pop_up .center span {
+   font-size: 25px;
+   position: absolute;
+   top: 10px;
+   display: inline-block;
+   white-space: nowrap;
+}
+
+#pop_up .swipe_to_confirm {
+   left: 50%;
+   margin-left: -95px;
+}
+
+#pop_up .confirmed {
+   left: 50%;
+   margin-left: -300px;
+}
+
+/* End styling for pop up */
+
+/* Styling for map pop up */
+
+.map_container_pop_up {
+	top: -1500px;
+	width: 80%;
+	height: 60%;
+}
+
+/* End styling for map pop up */
+
+/* Styling for results */
+
+#results {
+   display: none;
+   position: relative;
+}
+
+span#randomize {
+   position: absolute;
+   top: -15px;
+   right: -12px;
+   padding: 10px 10px 15px 22px;
+}
+
+span#randomize img {
+   width: 45px;
+}
+
+span.return {
+   position: fixed;
+   font-size: 30px;
+   padding: 8px;
+   padding-top: 6px;
+   padding-bottom: 10px;
+   top: 19px;
+   right: 50%;
+   margin-right: -40px;
+   background-color: #067ab4;
+   color: white;
+   border-radius: 100px;
+   opacity: 0.85;
+   display: none;
+   z-index: 3;
+}
+
+/* Styling for search details */
+
+html table i.detail {
+   position: relative;
+   font-size: 32px;
+   margin-bottom: 12px;
+   margin-top: 12px;
+   width: 25%;
+   text-align: center;
+   color: #666;
+}
+
+html table i.no_detail {
+   position: absolute;
+   left: 12px;
+   top: -11px;
+   font-size: 52px;
+   color: #b30a3c;
+}
+
+i[class*="rated"] {
+   font-size: 35px;
+   padding: 5px;
+   margin: 0px 5px;
+}
+
+i.rated {
+   color: #ff9900;
+}
+
+div[id*="star_"] {
+   margin-left: -137.5px;
+   position: relative;
+   left: 50%;
+}
+
+button.more_details.picture {
+   margin-right: 4%;
+}
+
+button.more_details.picture_map_button {
+   width: 48%;
+}
+
+span.strong {
+   font-weight: 700;
+}
+
+span.rating_number {
+   padding: 10px;
+   vertical-align: sub;
+}
+
+/* End styling for search details */
+
+/* End styling for results */
+
+/* End styling for makeReservation */
+
+/* Styling for Tutorial */
+
+#tutorialPage img {
+   z-index: 10;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+#tutorialPage .tutorial_step {
+   z-index: 16;
+   position: absolute;
+   border-radius: 100px;
+   font-size: 78px;
+   color: #3aa5dc;
+}
+
+#tutorialPage .tutorial_step[id*="_step"] {
+   top: 50%;
+   margin-top: -50px;
+}
+
+span[class*="icon-cancel"] {
+   background-color: #b30a3c;
+   color: white;
+   padding: 10px;
+   font-size: 16px;
+   border-radius: 100px;
+}
+
+a#skip {
+   top: -25px;
+   left: 10px;
+   width: 60px;
+   text-align: center;
+}
+
+a#next_step {
+   right: -20px;
+}
+
+a#back_step {
+   left: -20px;
+   display: none;
+}
+
+/* End styling for tutorial */
+
+/* load bar */
+.pace {
+   -webkit-pointer-events: none;
+   pointer-events: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+
+   z-index: 2000;
+   position: fixed;
+   margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 5px;
+   width: 200px;
+   background: #fff;
+   border: 1px solid #29d;
+}
+
+.pace .pace-progress {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   box-sizing: border-box;
+
+   -webkit-transition: width 1s ease-in-out 1s linear;
+   -moz-transition: width 1s ease-in-out 1s linear;
+   -ms-transition: width 1s ease-in-out 1s linear;
+   -o-transition: width 1s ease-in-out 1s linear;
+   transition: width 1s ease-in-out 1s linear;
+
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   -o-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+
+   max-width: 200px;
+   position: fixed;
+   z-index: 2000;
+   display: block;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   height: 100%;
+   background: #29d;
+}
+
+.pace.pace-inactive {
+   display: none;
+}
+/* end load bar*/
+
+img#picture.map {
+   display: inline;
+   height: auto;
+   margin-top: -117px;
+}
+
+div#panzoom-parent{
+   overflow: hidden;
+   width:100px;
+   height: auto;
+}
+
+div#map pop{
+   overflow: hidden;
+}
+
+/*start zoomed out on map page*/
+img#map.panzoom{
+
+   transform: matrix(1, 0, 0, 1, 0, 0);
+}

@@ -1,0 +1,36 @@
+{
+  "reservations": [
+    {
+      "reserve_id" : "1",
+      "user_id" : "1",
+      "seat_id" : "A1",
+      "date" : "2014-08-01",
+      "start_time" : "08:00:00",
+      "end_time" : "17:00:00"
+    },
+    {
+      "reserve_id" : "2",
+      "user_id" : "2",
+      "seat_id" : "A2",
+      "date" : "2014-08-02",
+      "start_time" : "08:00:00",
+      "end_time" : "17:00:00"
+    },
+    {
+      "reserve_id" : "3",
+      "user_id" : "1",
+      "seat_id" : "A3",
+      "date" : "2014-08-03",
+      "start_time" : "08:00:00",
+      "end_time" : "17:00:00"
+    },
+    {
+      "reserve_id" : "4",
+      "user_id" : "2",
+      "seat_id" : "A4",
+      "date" : "2014-08-04",
+      "start_time" : "08:00:00",
+      "end_time" : "17:00:00"
+    }
+  ]
+}

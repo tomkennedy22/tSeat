@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FooTable -->
+  <!-- http://fooplugins.com/plugins/footable-jquery/ -->
+  <link href="FooTable-2/css/footable.core.css" rel="stylesheet"
+  type="text/css" />
+  <link href="FooTable-2/css/footable.metro.css" rel="stylesheet"
+  type="text/css" />
+
+  <!--jQuery Mobile -->
+  <link href="css/jqm-datebox.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/jquery.mobile.css" rel="stylesheet" />
+
+  <!--Icon Font-->
+  <!-- http://metroui.org.ua/ -->
+  <link href="css/iconFont.min.css" rel="stylesheet">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="pop_up_haze"></div>
+  <!-- Log in Page -->
+  <div data-role="page" id="loginPage" data-theme="f">
+    <!-- Header -->
+    <div data-role="header"  data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+    <!-- Main -->
+    <div data-role="main" class="ui-content">
+      <div class="content">
+        <form name="input">
+          <div class="form-group">
+            <label for="username">Username </label> <input
+            class="form-control" type="text" name="username" id="username"
+            placeholder="Enter username"><br>
+          </div>
+          <div class="form-group">
+            <label for="password">Password </label> <input
+            class="form-control" type="password" name="password"
+            id="password" placeholder="Enter password"><br>
+          </div>
+          <button class="btn btn-default" type="button" >Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+  </div>
+  <!-- Make Reservation Page -->
+  <div data-role="page" id="makeReservationPage" data-theme="f">
+    <!-- Header -->
+    <div data-role="header"  data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+    <!-- Main -->
+    <div data-role="main" class="ui-content">
+      <section id="search_sect">
+        <article id="search">
+          <a id="alter_search">
+            <h2>
+              Search Options 
+              <span class="small_message"></span>
+            </h2>
+          </a>
+          <form id="search_form" data-ajax="false">
+            <div id="regular_options">
+              <div class="search_info" id="date">
+                <input id="search_date" type="date" data-role="datebox"
+                data-options='{"mode": "calbox", "overrideDateFormat":"%B %d, %Y", "overrideHeaderFormat": "", "useNewStyle" : true, "useAltIcon" : true, "overrideStyleClass" : true, "themeDateToday" : "a", "afterToday" : true, "maxDays": 30 }'>
+                <span class="icon-calendar date_time_symbol"></span>
+              </div>
+
+              <div class="search_info upper" id="time">
+                <input id="search_start_time" type="date" data-role="datebox"
+                data-options='{"mode": "timeflipbox", "minuteStep":"30", "useFocus":true, "useNewStyle" : true }'>
+                <span class="icon-clock date_time_symbol"></span>
+                <input id="search_end_time" type="date" data-role="datebox"
+                data-options='{"mode": "timeflipbox", "minuteStep":"30", "useFocus":true, "useNewStyle" : true }'>
+                <span class="icon-clock date_time_symbol"></span>
+              </div>
+            </div>
+            <div class="search_info">
+              <a id="show_more"> <span>More Options</span> <span
+                class="ui-icon ui-icon-carat-d ui-btn-icon-notext ui-btn-icon-right ui-icon-transparent"></span>
+              </a>
+            </div>
+            <div id="more_options">
+              <i class="icon-monitor search_option" id="monitor"></i> <i
+              class="icon-keyboard search_option" id="keyboard"></i> <i
+              class="icon-mouse search_option" id="mouse"></i> <i
+              class="icon-cabinet search_option" id="drawers"></i>
+              <hr />
+              <fieldset data-role="controlgroup" id="#types">
+                <input type="checkbox" name="1" id="1" value="1"> <label
+                for="1">Desk</label> <input type="checkbox" name="2" id="2"
+                value="2"> <label for="2">Cafe</label> <input
+                type="checkbox" name="3" id="3" value="3"> <label
+                for="3">Dogbone</label> <input type="checkbox" name="4" id="4"
+                value="4"> <label for="4">High Desk</label>
+              </fieldset>
+              <div class="clear"></div>
+              <hr />
+              <fieldset data-role="controlgroup" id="seat_number_options">
+                <span class="search_seat_number">Seat number</span>
+                <select name="select_seat_number" id="select_seat_number" class="search_seat_number">
+                  <option value="with">containing</option>
+                  <option value="equal">exactly</option>
+                  <option value="not">not containing</option>
+                </select>
+                <input type="text" name="seat_number" id="search_seat_number" value="" class="search_seat_number">
+              </fieldset>
+            </div>
+            <div class="search_info">
+              <button type="submit" id="find_seat">Reserve a Seat</button>
+            </div>
+          </form>
+        </article>
+      </section>
+      <section id="results">
+        <h2>Results</h2>
+        <span id="randomize">
+          <img src="img/dice.png">
+        </span>
+        <span class="icon-arrow-up return"></span>
+        <span class="error"></span>
+      </section>
+      <section id="pop_up">
+        <h2 class="orange_subtitle"></h2>
+      </section>
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+  </div>
+  <!-- My Reservations Page -->
+  <div data-role="page" id="myReservationPage" data-theme="f">
+    <!-- Header -->
+    <div data-role="header"  data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+    <!-- Main -->
+    <div data-role="main" class="ui-content">
+      <h2>My Seats</h2>
+      <div class="content" id="content">
+        <span class="error"></span>
+        <span class="icon-arrow-up return"></span>
+        <span class="small_message">Swipe Row Left to Delete</span>
+      </div>
+      <section id="pop_up"></section>
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+  </div>
+  <!-- Floor Map Page -->
+  <div data-role="page" id="mapPage" data-theme="f">
+    <!-- Header -->
+    <div data-role="header"  data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+    <!-- Main -->
+    <div data-role="main" class="ui-content">
+      <h2>Floor Map</h2>
+      <section id="inverted-contain">
+        <div id="reserve_seat">
+          <label for="map_seat_number">Seat #:</label>
+          <input type="text" name="map_seat_number" id="map_seat_number" value="A1" class="map_seat_number">
+          <button id="reserve_from_map">Reserve</button>
+        </div>
+        <div class="panzoom-parent" id="map_container">
+          <img class="panzoom" src="img/14th_Floor.jpg" id="map" usemap="#floormap">
+        </div>
+        <div class="buttons" id="map_buttons" align="center">
+          <button class="reset ui-btn ui-shadow ui-corner-all ui-btn-inline">Reset</button>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+  </div>
+  <!-- About Us Page -->
+  <div data-role="page" id="aboutPage" data-theme="f">
+    <!-- Header -->
+    <div data-role="header"  data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+    <!-- Main -->
+    <div data-role="main" class="ui-content">
+      <h2>About AT&Terns</h2>
+      <div class="about" align="center">
+        <img src="img/about/group_2.jpg">
+        <div class="about-text-box" align="center">
+          <p>
+            You may think messing around is an intern's best skill, but maybe that's why our app is so fun. So go ahead, mess around. We made this app for you.
+            <br>
+            <span>AT&Terns</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      <section id="aboutInterns"></section>
+      <button id="tutorial">Tutorial</button>
+      <div id="legal" align="center">
+        <h6>
+          <b>AT&T Proprietary Information</b> <br>
+          <h7> 
+            <i>
+              The content of this site is user-contributed. It
+              should not be considered company-endorsed and does not necessarily
+              reflect the views of AT&T. <br> By viewing and using this
+              site, you agree to follow the COBC and the Terms of Use for this
+              site. <br> © 2014 AT&T Intellectual Property. All rights
+              reserved.
+            </i>
+          </h7>
+        </h6>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div data-role="footer" data-position="fixed" data-id="fixed" data-tap-toggle="false">
+    </div>
+  </div>
+  <!-- Tutorial -->
+  <div data-role="page" id="tutorialPage" data-theme="f">
+    <!-- Main -->
+    <div data-role="main" class="ui-content">
+      <div class="constant_overlay"></div>
+      <img src="img/tutorial/step_1.png"></img>
+      <a class="tutorial_step" id="back_step">
+        <span class="icon-arrow-left-5"></span>
+      </a>
+      <a class="tutorial_step" id="skip">
+        <span class="icon-cancel-2"></span>
+      </a>
+      <a class="tutorial_step" id="next_step">
+        <span class="icon-arrow-right-5"></span>
+      </a>
+    </div>
+  </div>
+
+  <div id="scripts">
+    <!-- JQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- JQuery Mobile Plugins -->
+    <script src="js/jquery.mobile.js"></script>
+    <script src="js/jqm-datebox.core.min.js"></script>
+    <script src="js/jqm-datebox.mode.calbox.min.js"></script>
+    <script src="js/jqm-datebox.mode.flipbox.min.js"></script>
+    <script src="js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+
+    <!--  FooTable -->
+    <script src="FooTable-2/js/footable.js"></script>
+    <script src="FooTable-2/js/footable.sort.js"></script>
+    <script src="FooTable-2/js/footable.striping.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/functions.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/action.js"></script>
+    <script src="js/myReservation.js"></script>
+    <script src="js/makeReservation.js"></script>
+    <script src="js/jquery.panzoom.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/mapPage.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/aboutPage.js"></script>
+    <script src="js/tutorial.js"></script>
+
+  </div>
+</body>
+</html>

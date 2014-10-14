@@ -1,0 +1,204 @@
+{
+  "seats": [
+    {
+      "seat_id": "A1",
+      "type_id": "1",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "A2",
+      "type_id": "1",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "A3",
+      "type_id": "1",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "A4",
+      "type_id": "1",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "B7",
+      "type_id": "1",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "B23",
+      "type_id": "2",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "B24",
+      "type_id": "4",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "B25",
+      "type_id": "4",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "B26",
+      "type_id": "4",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "B27",
+      "type_id": "4",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "B41",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "C59",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "C60",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "C61",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "C62",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "D3",
+      "type_id": "2",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "D7",
+      "type_id": "2",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "D12",
+      "type_id": "2",
+      "available": true,
+      "monitor":false,
+      "keyboard":false,
+      "mouse":false,
+      "drawers":0,
+      "laptop_dock":false
+    },
+    {
+      "seat_id": "D28",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    },
+    {
+      "seat_id": "D29",
+      "type_id": "3",
+      "available": true,
+      "monitor":true,
+      "keyboard":true,
+      "mouse":true,
+      "drawers":2,
+      "laptop_dock":true
+    }
+  ]
+}
